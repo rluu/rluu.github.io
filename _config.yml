@@ -1,0 +1,139 @@
+##############################################################################
+# Configuration file for Jekyll.
+##############################################################################
+
+# Jekyll configuration.
+
+#url: "https://rluu.github.io"
+url: "http://localhost:9000"
+paginate: 1
+#markdown: rdiscount # markdown already defined below.  We are using 'kramdown'.
+#permalink: pretty # Set below.
+#relative_permalinks: true # Set to false below, which is the default.
+
+domain: rluu.github.io
+author:
+  name: Ryan Luu
+  url: https://rluu.github.io
+  email: ryanluu@gmail.com
+title: Upshift  # Title of the website.
+#tagline: ""  # Tagline for the website.
+
+# Custom vars.
+#github: 
+#  repo: https://github.com/rluu/rluu.github.io
+
+
+# List of pages to place in the navigation bar.
+# This portion is taken from the tutorial at:
+#   http://joshualande.com/jekyll-github-pages-poole/
+#pages_list:
+#  About: '/about'
+#  Archive: '/archive'
+#  Feed: '/atom.xml'
+
+
+# Default settings for various scopes/values.
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+# Where things are
+source:      .             # Where Jekyll will read files.
+destination: ./_site       # Where Jekyll will write files.
+plugins:     ./_plugins
+layouts:     ./_layouts
+data_source: ./_data
+collections: null
+
+# Handling Reading
+#safe:        false # safe set to true will disable custom plugins, and ignore symbolic links.  Github overrides this and sets it to true.
+include:      [".htaccess"]
+exclude:      ["Gemfile", "Gemfile.lock", "vendor", "README.md"]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Plugins
+whitelist: []
+#gems:      []
+gems:
+- jekyll-mentions # provides support for @mentions within Jekyll posts and pages
+- jemoji     # provides support for emoji within Jekyll posts and pages
+- jekyll-redirect-from # redirects visitors to an updated URL when Jekyll post or page filenames change.
+- jekyll-sitemap #  adds a standards compliant sitemap for your GitHub Pages.
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+lsi:         false  # If true, produces an index for related posts.
+excerpt_separator: "\n\n"
+
+# Serving
+detach:  false
+port:    4000
+host:    0.0.0.0
+baseurl: / # does not include hostname
+
+# Backwards-compatibility
+relative_permalinks: false  # Default in v2.0 is using absolute permalinks (i.e. this setting is set to false).
+
+# Outputting
+#permalink:     date
+permalink:     pretty
+#paginate_path: /page:num
+#timezone:      null  # If not set, defaults to local time zone.
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+  fenced_code_blocks: true
+
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:      true
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  use_coderay:   false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+
+  input: GFM # Github Flavored Markdown.
+
+redcloth:
+  hard_breaks: true
+
+# Google Analytics.
+google_analytics_id: "UA-56790771-1"
+
+##############################################################################
