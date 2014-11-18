@@ -1,30 +1,38 @@
 rluu.github.io
 ==============
 
-Personal website.
+Personal website built using Jekyll, hosted on Github.
 
-## Dependencies
+Website URL: [http://ryanluu.net](http://ryanluu.net)
 
-- Ruby gems:
-  - bundle
+### Dependencies
 
-## Building
+Ruby gems:
 
-1. Clone the github repository for this project.
+- bundle
+
+### Building
 
 ```bash
+# Clone the github repository for this project.
 git clone https://github.com/rluu/rluu.github.io.git
 cd rluu.github.io.git
+
+# Install github-pages gem into the local directory.
+bundle install --path vendor/bundle
+
+# Run a server hosting the website.
+bundle exec jekyll serve
 ```
 
-2. Install github-pages gem:
-
-`bundle install`
-
 Note:
-On my home desktop computer, `bundle` may be on the filesystem as `bundle.ruby2.1`.
+On my home desktop computer, `bundle` may be installed on the filesystem as `bundle.ruby2.1`.
 
-3. Run a server hosting the website:
+###  Miscellaneous Information
 
-`bundle exec jekyll serve`
+Domain `ryanluu.net` was registered at [namecheap](https://www.namecheap.com).
 
+Blog commenting system used is [disqus](https://disqus.com).
+
+Website analytics system used is
+[Google Analytics](http://www.google.com/analytics/).
