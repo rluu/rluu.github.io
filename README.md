@@ -16,9 +16,9 @@ Ruby gems:
 ```bash
 # Clone the github repository for this project.
 git clone https://github.com/rluu/rluu.github.io.git
-cd rluu.github.io.git
+cd rluu.github.io
 
-# Install github-pages gem into the local directory.
+# Install github-pages gem into the following local subdirectory.
 bundle install --path vendor/bundle
 
 # Run a server hosting the website.

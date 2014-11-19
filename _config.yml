@@ -4,12 +4,15 @@
 
 # Jekyll configuration.
 
-#url: "https://rluu.github.io"
-url: "http://localhost:9000"
-paginate: 1
 #markdown: rdiscount # markdown already defined below.  We are using 'kramdown'.
 #permalink: pretty # Set below.
 #relative_permalinks: true # Set to false below, which is the default.
+
+name: "Upshift"
+description: "Ryan Luu's personal website."
+#url: "https://rluu.github.io"
+url: "http://localhost:9000"
+paginate: 5
 
 domain: rluu.github.io
 author:
@@ -68,10 +71,10 @@ unpublished: false
 whitelist: []
 #gems:      []
 gems:
-- jekyll-mentions # provides support for @mentions within Jekyll posts and pages
-- jemoji     # provides support for emoji within Jekyll posts and pages
-- jekyll-redirect-from # redirects visitors to an updated URL when Jekyll post or page filenames change.
 - jekyll-sitemap #  adds a standards compliant sitemap for your GitHub Pages.
+#- jekyll-mentions # provides support for @mentions within Jekyll posts and pages
+#- jemoji     # provides support for emoji within Jekyll posts and pages
+#- jekyll-redirect-from # redirects visitors to an updated URL when Jekyll post or page filenames change.
 
 # Conversion
 markdown:    kramdown
@@ -83,7 +86,8 @@ excerpt_separator: "\n\n"
 detach:  false
 port:    4000
 host:    0.0.0.0
-baseurl: / # does not include hostname
+#baseurl: / # does not include hostname
+baseurl: "" # does not include hostname
 
 # Backwards-compatibility
 relative_permalinks: false  # Default in v2.0 is using absolute permalinks (i.e. this setting is set to false).
@@ -91,7 +95,7 @@ relative_permalinks: false  # Default in v2.0 is using absolute permalinks (i.e.
 # Outputting
 #permalink:     date
 permalink:     pretty
-#paginate_path: /page:num
+paginate_path: "blog/page:num/"
 #timezone:      null  # If not set, defaults to local time zone.
 
 quiet:    false
