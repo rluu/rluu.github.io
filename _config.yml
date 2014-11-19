@@ -11,7 +11,7 @@
 name: "Upshift"
 description: "Ryan Luu's personal website."
 #url: "https://rluu.github.io"
-url: "http://localhost:9000"
+url: "http://localhost:4000"
 paginate: 5
 
 domain: rluu.github.io
@@ -86,8 +86,7 @@ excerpt_separator: "\n\n"
 detach:  false
 port:    4000
 host:    0.0.0.0
-baseurl: / # does not include hostname
-#baseurl: "" # does not include hostname
+baseurl: /rluu.github.io # does not include hostname
 
 # Backwards-compatibility
 relative_permalinks: false  # Default in v2.0 is using absolute permalinks (i.e. this setting is set to false).
