@@ -87,12 +87,13 @@ detach:  false
 port:    4000
 host:    0.0.0.0
 
-# When runing locally, pass an empty baseurl to the jekyll serve command: 
-#   bundle exec jekyll serve --baseurl ""
+# Leave the baseurl setting empty.  
+# It breaks Github if it is not empty.
 # 
-# Leave the below baseurl set to "/<projectname>" so that Github can 
-# resolve links as desired.
-baseurl: /rluu.github.io
+# If custom settings are desired, then pass a string to the 
+# --baseurl option of the jekyll serve command.
+#
+baseurl: ""
 
 # Backwards-compatibility
 relative_permalinks: false  # Default in v2.0 is using absolute permalinks (i.e. this setting is set to false).
