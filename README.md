@@ -22,7 +22,7 @@ cd rluu.github.io
 bundle install --path vendor/bundle
 
 # Run a server hosting the website.
-bundle exec jekyll serve
+bundle exec jekyll serve --baseurl ""
 ```
 
 Note:
