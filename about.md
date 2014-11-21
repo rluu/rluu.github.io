@@ -3,28 +3,54 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+### Who Am I
 
-There are currently two themes built on Poole:
+Hello!  They call me Ryan Luu.  I'm a software engineer in the DC metro area, specializing in Java, Python and C++.  I have strong interests in all things related to programming and software development.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+My primary skillsets are:
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+- Backend development in Java.
+- Application UI development with C++/Qt and PyQt.
+- Scripting (Python, Bash, etc.)
+- Linux and Unix OSes.
 
-## Setup
+If you're interested in chatting with me about programming, technology, or any other related topic, please visit my [contact page]({{ site.baseurl }}/contact/) for a way to get in touch with me.
 
-Some fun facts about the setup of this project include:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+### This Website
 
-Thanks for reading!
+#### Purpose
+
+Why create this website?  What is its purpose?
+
+- This is a blog for writing my thoughts on software-related topics.  Sometimes I stumble across a cool but relatively unknown software library and want to share it, or perhaps I am documenting interesting features of a new language I am exploring.  This is also a way to keep track of what I've encountered and learned, so the information can be easily referenced in the future.
+
+- This site has a page to organize and make available various personal software projects I have worked on in my spare time.
+
+- This is my foray into developing webpages with newer web technologies.  By this, I mean newer web programming and markup languages, libraries, tools, etc.
+
+
+#### The Backend
+
+Some technologies used in the development of this website include:
+
+* Blog posts powered by [Jekyll](http://jekyllrb.com).
+* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com).
+* Coded with the [GNU Emacs](http://www.gnu.org/software/emacs/) editor, with various [lisp packages](https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html) from [ELPA](https://elpa.gnu.org/) and [MELPA](http://melpa.org/).
+
+Programming languages or markup used:
+
+- [Liquid](http://liquidmarkup.org/) templating language.
+- [YAML](http://yaml.org/) markup language.
+- [Javascript](http://www.w3schools.com/js/).
+- [HTML5](http://www.w3schools.com/html/html5_intro.asp).
+- [CSS3](http://www.w3schools.com/css/css3_intro.asp).
+
+Javascript libraries used:
+
+- [Bootstrap 3](http://getbootstrap.com/).
+- [JQuery](http://jquery.com/).
+
+Have any questions or suggestions?  Feel free to [contact me]({{ site.baseurl }}/contact/).  Thanks for reading!
