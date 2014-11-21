@@ -10,20 +10,20 @@
 	<h1 class="post-title">{{ page.title }}</h1>
 	<p class="muted">{{ page.date | date_to_long_string }}</p>
 
-	<div class="container">
-	  {{ content }}
-	</div>
+	{{ content }}
+	
       </article>
 
+      <hr></hr>
       <aside class="related">
 	<h3>Related Posts</h3>
 	<ul class="related-posts">
 	  {% for post in site.related_posts limit:3 %}
 	  <li>
-            <h4>
+            <h5>
               <a href="{{ post.url }}">{{ post.title }}</a>
 	      <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-            </h4>
+            </h5>
 	  </li>
 	  {% endfor %}
 	</ul>
