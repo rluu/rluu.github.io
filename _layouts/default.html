@@ -5,7 +5,7 @@
   
   <div class="row-fluid">
     
-    <!-- Sidebar and content. -->
+    <!-- Column for content, and column for sidebar. -->
     <div class="col-xs-7 col-sm-8 col-md-9 col-lg-10 main">
       {{ content }}
     </div>
@@ -13,12 +13,6 @@
       {% include sidebar.html %}
     </div>
 
-    <!-- Content only (no sidebar). -->
-    <!--
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main">
-      {{ content }}
-    </div>
-    -->
   </div>
 
 {% include footer.html %}
