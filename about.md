@@ -6,7 +6,7 @@ title: About
 
 ### Who Am I ?
 
-Hello!  I'm Ryan luu, a software engineer in the DC metro area, specializing in Java, Python and C++.  I have strong interests in all things related to programming and software development.
+Hello!  I'm Ryan luu, a software engineer in the DC metro area, specializing in Java, Python and C++.  I have an interest in all things related to programming and software development.
 
 My primary skillsets are:
 
