@@ -4,3 +4,7 @@
     font-size: x-large
 }
 
+body {
+    background-image: url(../images/fresh_snow.png);
+    background-repeat: repeat;
+}
