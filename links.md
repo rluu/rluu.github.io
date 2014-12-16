@@ -36,7 +36,9 @@ Java blogs:
 Java informational / tutorial / learning blogs:
 
 - [Java Latte](http://java-latte.blogspot.in/)
-TODO:  Add more sites here from my bookmarks.
+- [DevX](http://www.devx.com/Java/)
+- [Java World](http://www.javaworld.com/)
+- [InfoQ - Java](http://www.infoq.com/java/)
 
 Javascript blogs:
 
