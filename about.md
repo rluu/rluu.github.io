@@ -3,10 +3,13 @@ layout: page
 title: About
 ---
 
+<hr />
 
 ### Who Am I ?
 
-Hello!  I'm Ryan luu, a software engineer in the DC metro area, specializing in Java, Python and C++.  I have an interest in all things related to programming and software development.
+![Picture of Ryan Luu]({{ site.baseurl }}/images/RyanLuu.png)
+
+Hello!  I'm Ryan Luu, a software engineer in the DC area, specializing in Java, Python and C++.  I have an interest in all things related to programming and software development.
 
 My primary skillsets are:
 
@@ -15,9 +18,10 @@ My primary skillsets are:
 - Scripting (Python, Bash, etc.)
 - Linux and Unix OSes.
 
-If you're interested in chatting with me about programming, technology, or any other related topic, please visit my [contact page]({{ site.baseurl }}/contact/) for a way to get in touch with me.
+If you're interested in chatting with me about programming, technology, or any other related topic, please visit my
+[contact page]({{ site.baseurl }}/contact/) for a way to get in touch with me.
 
-
+<hr />
 
 ### This Website
 
@@ -58,3 +62,5 @@ Javascript and CSS libraries used:
 Have any questions or suggestions?  Feel free to [contact me]({{ site.baseurl }}/contact/).
 
 Thanks for reading!
+
+<hr />

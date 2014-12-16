@@ -1,0 +1,57 @@
+---
+layout: page
+title: Links
+---
+
+<hr />
+
+### Programming News
+
+- [Smashing Magazine](http://www.smashingmagazine.com/)
+- [Hacker News](https://news.ycombinator.com/news)
+- [Reddit - Programming](http://www.reddit.com/r/programming)
+
+
+### Generic Tech News
+
+- [Wired](http://www.wired.com/)
+- [Extreme Tech](http://www.extremetech.com/)
+- [Tech Crunch](http://techcrunch.com/)
+- [Tech News World](http://www.technewsworld.com/)
+
+### Programming Blogs
+
+General Programming/Coding blogs:
+
+- [Steve Hanov's blog](http://stevehanov.ca/blog/)
+- [Dan Dreams of Coding](http://dandreamsofcoding.com/)
+- [Ian Biking's blog](http://www.ianbicking.org/)
+
+Java blogs:
+
+- [ZeroTurnAround](http://zeroturnaround.com/rebellabs/)
+- [JetBrains IntelliJ IDEA blog](http://blog.jetbrains.com/idea/)
+- [Danno Ferrin's blog](http://speling.shemnon.com/)
+
+Java informational / tutorial / learning blogs:
+
+- [Java Latte](http://java-latte.blogspot.in/)
+TODO:  Add more sites here from my bookmarks.
+
+Javascript blogs:
+
+- [Derick Bailey's blog](http://derickbailey.com/)
+
+Tablet and Mobile Development:
+
+- [Gone Mobile](http://gonemobile.io/)  (Audio podcasts)
+- [Yet Another Podcast](http://jesseliberty.com/podcast/) (Audio podcasts)
+- [The Hansel Minutes](http://hanselminutes.com/) (Audio podcasts)
+
+
+Old blogs that are possibly not updated anymore, but still have good content:
+
+- [Joel on Software](http://www.joelonsoftware.com/)
+- [The Tablet Show](http://thetabletshow.com/archives.aspx)
+
+<hr />

@@ -3,84 +3,12 @@ layout: default
 #title: Home
 ---
 
-<div class="container-fluid">
+<h1>Welcome!</h1>
 
-        <h2>Welcome!</h2>
+<hr />
 
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p> 
+<p>Welcome to Ryan Luu's website.</p>
 
-        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+<p>Have a look around.  I hope you'll enjoy your visit!</p>
 
-
-<!-- Something in one of these commented-out sections below is afoul.  It
-     causes a closing comment string to be added to the content and 
-     reproduces other content unnecessarily.  I plan on creating a blog.html
-page or something along those lines that is just a view of the X most recent
-posts of the blog.  That is where these pagination kind of code/presentation
-should be placed.
-  -->
-
-<!-- This loops through the paginated posts -->
-<!--
-{% for post in paginator.posts %}
-<div class="row-fluid">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <h2>{{ post.title }}</h2>
-    <h4>{{ post.date | date_to_long_string }}</h4>
-    <p>
-      <a href="{{ post.url }}">Read Post</a>
-    </p>
-  </div>
-</div>
-{% endfor %}
--->
-
-<!--
-<h1 class="post-title">
-  <a href="{{ post.url }}">{{ post.title }}</a>
-</h1>
-
-<p class="author">
-  <span class="date">{{ post.date }}</span>
-</p>
-
-<div class="content">
-  {{ post.content }}
-</div>
-
--->
-
-
-<!-- Pagination links -->
-<!--
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ "/index.html" | prepend: site.baseurl | replace: "//", "/" }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: "//", "/" | replace: ":num", page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
--->
-
-<p>Text at the end.</p>
-
-
-</div>
+<hr />
