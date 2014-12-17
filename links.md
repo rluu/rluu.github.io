@@ -12,13 +12,6 @@ title: Links
 - [Reddit - Programming](http://www.reddit.com/r/programming)
 
 
-### Generic Tech News
-
-- [Wired](http://www.wired.com/)
-- [Extreme Tech](http://www.extremetech.com/)
-- [Tech Crunch](http://techcrunch.com/)
-- [Tech News World](http://www.technewsworld.com/)
-
 ### Programming Blogs
 
 General Programming/Coding blogs:
@@ -36,7 +29,7 @@ Java blogs:
 Java informational / tutorial / learning blogs:
 
 - [Java Latte](http://java-latte.blogspot.in/)
-- [DevX](http://www.devx.com/Java/)
+- [DevX - Java](http://www.devx.com/Java/)
 - [Java World](http://www.javaworld.com/)
 - [InfoQ - Java](http://www.infoq.com/java/)
 
@@ -55,5 +48,12 @@ Old blogs that are possibly not updated anymore, but still have good content:
 
 - [Joel on Software](http://www.joelonsoftware.com/)
 - [The Tablet Show](http://thetabletshow.com/archives.aspx)
+
+### Generic Tech News
+
+- [Wired](http://www.wired.com/)
+- [Extreme Tech](http://www.extremetech.com/)
+- [Tech Crunch](http://techcrunch.com/)
+- [Tech News World](http://www.technewsworld.com/)
 
 <hr />
