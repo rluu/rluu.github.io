@@ -18,7 +18,10 @@ General Programming/Coding blogs:
 
 - [Steve Hanov's blog](http://stevehanov.ca/blog/)
 - [Dan Dreams of Coding](http://dandreamsofcoding.com/)
-- [Ian Biking's blog](http://www.ianbicking.org/)
+- [Ian Biking's blog](http://www.ianbicking.org/blog/)
+- [Robert Heaton's blog](http://robertheaton.com/)
+- [Marco Arment's blog](http://www.marco.org/)
+- [Paul Graham's essays](http://paulgraham.com/articles.html)
 
 Java blogs:
 
@@ -49,11 +52,5 @@ Old blogs that are possibly not updated anymore, but still have good content:
 - [Joel on Software](http://www.joelonsoftware.com/)
 - [The Tablet Show](http://thetabletshow.com/archives.aspx)
 
-### Generic Tech News
-
-- [Wired](http://www.wired.com/)
-- [Extreme Tech](http://www.extremetech.com/)
-- [Tech Crunch](http://techcrunch.com/)
-- [Tech News World](http://www.technewsworld.com/)
 
 <hr />

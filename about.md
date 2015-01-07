@@ -9,7 +9,7 @@ title: About
 
 ![Picture of Ryan Luu]({{ site.baseurl }}/images/RyanLuu.png)
 
-Hello!  I'm Ryan Luu, a software engineer in the DC area, specializing in Java, Python and C++.  I have an interest in all things related to programming and software development.
+Hello! I’m Ryan Luu, a software engineer in the DC area, specializing in Java, Python and C++. I have an interest in all things related to programming and software development.
 
 My primary skillsets are:
 
@@ -18,7 +18,8 @@ My primary skillsets are:
 - Scripting (Python, Bash, etc.)
 - Linux and Unix OSes.
 
-If you're interested in chatting with me about programming, technology, or any other related topic, please visit my
+
+If you're interested in chatting with me about programming, technology, or any other topic, please visit my
 [contact page]({{ site.baseurl }}/contact/) for a way to get in touch with me.
 
 <hr />
@@ -29,9 +30,9 @@ If you're interested in chatting with me about programming, technology, or any o
 
 Why create this website?  What is its purpose?
 
-- This is a blog for writing my thoughts on software-related topics.  Sometimes I stumble across a cool but relatively unknown software library and want to share it, or perhaps I am documenting interesting features of a new language I am exploring.  This is also a way to keep track of what I've encountered and learned, so the information can be easily referenced in the future.
+- This is a place for me to write articles or blog posts related to my personal interests.  This may be a cool new software library I've come across and or perhaps an interesting feature of a new language I am exploring.  This is also a way to keep track of what I've encountered and learned, so the information can be easily referenced in the future.
 
-- This site has a page to organize and make available various personal software projects I have worked on in my spare time.
+- This site has a page with a list of personal software projects I have worked on in my spare time.
 
 - This is my foray into developing webpages with newer web technologies.  By this, I mean newer web programming and markup languages, libraries, tools, etc.
 
@@ -46,11 +47,9 @@ Some technologies used to create this website include:
 
 Programming languages or markup used:
 
+- [HTML5](http://www.w3schools.com/html/html5_intro.asp) / [Javascript](http://www.w3schools.com/js/) / [CSS3](http://www.w3schools.com/css/css3_intro.asp).
 - [Liquid](http://liquidmarkup.org/) templating language.
 - [YAML](http://yaml.org/) markup language.
-- [Javascript](http://www.w3schools.com/js/).
-- [HTML5](http://www.w3schools.com/html/html5_intro.asp).
-- [CSS3](http://www.w3schools.com/css/css3_intro.asp).
 
 Javascript and CSS libraries used:
 
