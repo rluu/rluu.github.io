@@ -52,5 +52,11 @@ Old blogs that are possibly not updated anymore, but still have good content:
 - [Joel on Software](http://www.joelonsoftware.com/)
 - [The Tablet Show](http://thetabletshow.com/archives.aspx)
 
+### Personal links (active development):
+
+Just some links of projects/websites I'm working on that are undergoing active development:
+
+- [Ryan's AngularJS Apps](http://rluu-angular-apps.s3-website-us-east-1.amazonaws.com/)
+
 
 <hr />
