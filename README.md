@@ -3,7 +3,7 @@ rluu.github.io
 
 Personal website built using Jekyll, hosted on Github.
 
-Website URL: [http://ryanluu.net](http://ryanluu.net)
+Website URL: [http://rluu.github.io](http://rluu.github.io)
 
 ### Dependencies
 
@@ -30,7 +30,7 @@ On my home desktop computer, `bundle` may be installed on the filesystem as `bun
 
 ###  Miscellaneous Information
 
-Domain `ryanluu.net` was registered at [namecheap](https://www.namecheap.com).
+Domain `ryanluu.net` was previously registered at [namecheap](https://www.namecheap.com).  I no longer own that domain, but I may want to use their service again in the future.  
 
 Blog commenting system used is [disqus](https://disqus.com).
 
