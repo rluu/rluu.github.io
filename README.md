@@ -3,7 +3,7 @@ rluu.github.io
 
 Personal website built using Jekyll, hosted on Github.
 
-Website URL: [http://rluu.github.io](http://rluu.github.io)
+Website URL: [https://rluu.github.io](https://rluu.github.io)
 
 ### Dependencies
 
