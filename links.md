@@ -58,10 +58,5 @@ Just some links of projects/websites I'm working on that are undergoing active d
 
 - [Ryan's AngularJS Apps](http://rluu-angular-apps.s3-website-us-east-1.amazonaws.com/)
 
-Link to eclim 2.5.0 jar file (but you need to rename the file to have the
-.jar extension):
-
-- [eclim_2.5.0.jar.someext.doc](http://rluu-angular-apps.s3-website-us-east-1.amazonaws.com/eclim_2.5.0.jar.someext.doc)
-
 <hr />
 
