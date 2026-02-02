@@ -47,7 +47,7 @@ defaults:
 # Where things are
 source:      .             # Where Jekyll will read files.
 destination: ./_site       # Where Jekyll will write files.
-plugins:     ./_plugins
+plugins_dir: ./_plugins
 layouts:     ./_layouts
 data_source: ./_data
 collections: null
