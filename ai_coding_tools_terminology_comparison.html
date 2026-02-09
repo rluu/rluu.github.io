@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Coding Tools Terminology Comparison</title>
+<style>
+  @page {
+    size: landscape;
+    margin: 1.5cm;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    border-bottom: 2px solid #222;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  h1 + p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  /* ---- Table ---- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    margin-bottom: 1.5rem;
+  }
+
+  thead th {
+    background: #222;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.55rem 0.65rem;
+    white-space: nowrap;
+  }
+
+  thead th:first-child {
+    border-radius: 4px 0 0 0;
+  }
+
+  thead th:last-child {
+    border-radius: 0 4px 0 0;
+  }
+
+  tbody td {
+    padding: 0.5rem 0.65rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+
+  tbody td:first-child {
+    font-weight: 600;
+    white-space: nowrap;
+    background: #f7f7f7;
+    border-right: 1px solid #ddd;
+  }
+
+  tbody tr:nth-child(even) td:not(:first-child) {
+    background: #fafafa;
+  }
+
+  tbody tr:hover td {
+    background: #f0f0f0;
+  }
+
+  tbody td strong {
+    font-weight: 600;
+  }
+
+  /* ---- Key Takeaways ---- */
+  ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 0.92rem;
+  }
+
+  li strong {
+    font-weight: 600;
+  }
+
+  /* ---- Sources ---- */
+  .sources h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    color: #444;
+  }
+
+  .sources ul {
+    font-size: 0.85rem;
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .sources ul li {
+    margin-bottom: 0.3rem;
+    break-inside: avoid;
+  }
+
+  a {
+    color: #333;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* ---- Print ---- */
+  @media print {
+    body {
+      padding: 0;
+      max-width: none;
+      font-size: 10pt;
+    }
+
+    h1 { font-size: 14pt; }
+    h2 { font-size: 11pt; }
+
+    table { font-size: 8pt; page-break-inside: avoid; }
+
+    thead th { background: #222 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    tbody td:first-child { background: #f0f0f0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+    a { text-decoration: none; }
+    a::after { content: none; }
+  }
+</style>
+</head>
+<body>
+
+<h1>AI Coding Tools Terminology Comparison</h1>
+<p>A comparison of terminology used across major AI coding tools (as of February 2026).</p>
+
+<h2>Comparison Table</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Concept</th>
+  <th>Claude Code</th>
+  <th>OpenAI Codex</th>
+  <th>Kiro IDE</th>
+  <th>Kiro CLI</th>
+  <th>Gemini CLI</th>
+  <th>OpenCode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>The AI itself</strong></td>
+  <td>Agent / Subagent</td>
+  <td>Agent</td>
+  <td>Agent + Autonomous Agent (async)</td>
+  <td>Agent</td>
+  <td>Agent (ReAct loop)</td>
+  <td>Agent</td>
+</tr>
+<tr>
+  <td><strong>Specialized agents</strong></td>
+  <td>Subagents (Explore, Plan, Bash, etc.) + Custom Agents</td>
+  <td>&mdash;</td>
+  <td>Subagents + Powers (context bundles)</td>
+  <td>Subagents + Custom Agents</td>
+  <td>Sub-agents (experimental: cli_help, routing, generalist) + Jules (async) + Custom Agents</td>
+  <td>Primary Agents (Build, Plan) + Subagents (General, Explore) + Custom Agents</td>
+</tr>
+<tr>
+  <td><strong>Callable capabilities</strong></td>
+  <td>Tools (Read, Edit, Bash, Grep, Glob, Write, WebFetch, WebSearch, etc.)</td>
+  <td>Tools (shell, file read/write, apply patch, etc.)</td>
+  <td>Tools (built-in + MCP tools)</td>
+  <td>Built-in Tools (read, write, shell, aws, grep, glob, subagent, web search/fetch)</td>
+  <td>Tools (ReadFile, WriteFile, Edit, Shell, FindFiles, SearchText, GoogleSearch, WebFetch, SaveMemory, etc.)</td>
+  <td>Tools (bash, read, write, edit, grep, glob, list, patch, lsp, webfetch, websearch, etc.)</td>
+</tr>
+<tr>
+  <td><strong>External integrations</strong></td>
+  <td>MCP Servers</td>
+  <td>MCP Servers</td>
+  <td>MCP Servers (local + remote)</td>
+  <td>MCP Servers (local + remote, with MCP Registry governance)</td>
+  <td>MCP Servers (stdio + SSE transports)</td>
+  <td>MCP Servers (local + remote with OAuth)</td>
+</tr>
+<tr>
+  <td><strong>Reusable workflows</strong></td>
+  <td>Skills (slash commands) + Plugins</td>
+  <td>Skills + /review + /plan slash commands</td>
+  <td>Specs (SDD) + Agent Skills</td>
+  <td>Skills (progressively loaded, on-demand)</td>
+  <td>Extensions + Agent Skills (SKILL.md) + Custom Slash Commands</td>
+  <td>Skills (SKILL.md files in .opencode/skills/)</td>
+</tr>
+<tr>
+  <td><strong>Event-driven automation</strong></td>
+  <td>Hooks (14 events: PreToolUse, PostToolUse, SessionStart/End, UserPromptSubmit, Stop, SubagentStart/Stop, PreCompact, etc.)</td>
+  <td>&mdash;</td>
+  <td>Agent Hooks (file save/create/delete, prompt submit, agent turn, pre/post tool use)</td>
+  <td>Hooks (agentSpawn, userPromptSubmit, preToolUse, postToolUse, stop)</td>
+  <td>Hooks (SessionStart/End, BeforeModel/AfterModel, BeforeTool/AfterTool, BeforeAgent/AfterAgent, BeforeToolSelection, PreCompress)</td>
+  <td>Plugins (tool.execute.before/after, file.edited, session events, etc.)</td>
+</tr>
+<tr>
+  <td><strong>Project-level AI instructions</strong></td>
+  <td>CLAUDE.md (hierarchical: user/project/local)</td>
+  <td>AGENTS.md (hierarchical, with configurable fallbacks)</td>
+  <td>Steering Files (.kiro/steering/)</td>
+  <td>Steering Files (.kiro/steering/) + Agent config JSON</td>
+  <td>GEMINI.md (hierarchical, multi-file, configurable filename)</td>
+  <td>AGENTS.md (also reads CLAUDE.md for compatibility)</td>
+</tr>
+<tr>
+  <td><strong>Persistent memory</strong></td>
+  <td>Auto memory (~/.claude/projects/&lt;project&gt;/memory/) + Subagent memory</td>
+  <td>Thread memory (experimental)</td>
+  <td>Autonomous Agent learns from PR feedback</td>
+  <td>Knowledge management (experimental, /knowledge)</td>
+  <td>save_memory (built-in tool) + Conductor (extension)</td>
+  <td>&mdash; (available via community plugins)</td>
+</tr>
+<tr>
+  <td><strong>Bundled packages</strong></td>
+  <td>Plugins (commands, agents, skills, hooks, MCP, LSP)</td>
+  <td>&mdash;</td>
+  <td>Powers (MCP + steering + hooks) + Agent Skills + Open VSX plugins</td>
+  <td>Custom Agents (bundled config + tools + steering)</td>
+  <td>Extensions (MCP + context + slash commands + skills)</td>
+  <td>Plugins (JS/TS modules with hooks + custom tools)</td>
+</tr>
+<tr>
+  <td><strong>Background/async work</strong></td>
+  <td>Background tasks</td>
+  <td>Automations (scheduled runs in background worktrees)</td>
+  <td>Autonomous Agent (runs for days, up to 10 concurrent tasks)</td>
+  <td>Subagent parallelism</td>
+  <td>Jules (async in VM, up to 15 concurrent tasks) + Sub-agents</td>
+  <td>&mdash; (available via community plugins)</td>
+</tr>
+<tr>
+  <td><strong>Parallel execution</strong></td>
+  <td>Subagent parallelism</td>
+  <td>Cloud worktrees</td>
+  <td>Subagents (parallel) + Autonomous Agent (10 concurrent)</td>
+  <td>Subagents (isolated context, live progress)</td>
+  <td>Jules (15 concurrent tasks) + Sub-agents (experimental)</td>
+  <td>General subagent (limited parallelism)</td>
+</tr>
+<tr>
+  <td><strong>Planning mode</strong></td>
+  <td>Plan agent</td>
+  <td>/plan slash command</td>
+  <td>Spec-Driven Development + Plan Agent</td>
+  <td>Plan agent (built-in, Shift+Tab or /plan)</td>
+  <td>Plan Mode (experimental, read-only)</td>
+  <td>Plan agent (read-only, Tab to switch)</td>
+</tr>
+<tr>
+  <td><strong>Configuration</strong></td>
+  <td>settings.json (JSON, hierarchical scopes)</td>
+  <td>config.toml (TOML, with profiles)</td>
+  <td>.kiro/ directory (steering md, hooks, agents md, skills)</td>
+  <td>Agent config JSON + Steering Markdown</td>
+  <td>settings.json (JSON) + GEMINI.md</td>
+  <td>opencode.json (JSON/JSONC)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Key Takeaways</h2>
+<ul>
+  <li><strong>&ldquo;Tool&rdquo;</strong> is nearly universal &mdash; it means a callable capability the agent can invoke (read files, run commands, search, etc.).</li>
+  <li><strong>&ldquo;Agent&rdquo;</strong> is also universal &mdash; every tool uses this for the AI that reasons and acts.</li>
+  <li><strong>&ldquo;Subagent&rdquo;</strong> is now shared by Claude Code, Kiro (IDE and CLI), Gemini CLI (experimental), and OpenCode &mdash; specialized agents with isolated context that can run in parallel.</li>
+  <li><strong>&ldquo;Skill&rdquo;</strong> has converged across nearly all tools: Claude Code, Codex, Kiro (IDE and CLI), Gemini CLI, and OpenCode all use it for reusable, on-demand task-specific workflows. Most use SKILL.md files with YAML frontmatter.</li>
+  <li><strong>&ldquo;Hook&rdquo;</strong> is now supported by Claude Code, Kiro (IDE and CLI), Gemini CLI, and OpenCode &mdash; though with varying event types. Claude Code and Kiro CLI share pre/post tool-use hooks; Kiro IDE added prompt submit and agent turn triggers; Gemini CLI has the most extensive hook system (11+ event types including BeforeModel, AfterModel, BeforeToolSelection).</li>
+  <li><strong>&ldquo;Steering&rdquo;</strong> is unique to Kiro (both IDE and CLI) &mdash; project-level guardrails and conventions for the AI, analogous to CLAUDE.md or GEMINI.md but more structured.</li>
+  <li><strong>&ldquo;Extension&rdquo;</strong> is Google&rsquo;s term (Gemini CLI) for bundled packages that combine MCP servers, context files, slash commands, and skills &mdash; more comprehensive than what others call skills or plugins.</li>
+  <li><strong>Kiro CLI vs Kiro IDE</strong> have converged significantly &mdash; both now have subagents, hooks (with 5&ndash;7 trigger types), skills, MCP support, and plan agents. The IDE additionally offers Powers (dynamic context bundles) and the Autonomous Agent for multi-day async work.</li>
+  <li><strong>&ldquo;Plugin&rdquo;</strong> is shared by Claude Code and OpenCode, but with different meanings &mdash; Claude Code plugins are bundled packages of commands/agents/skills/hooks/MCP/LSP, while OpenCode plugins are JS/TS modules that hook into events and can create custom tools.</li>
+  <li><strong>MCP (Model Context Protocol)</strong> has become a universal cross-tool standard adopted by all six tools compared here.</li>
+  <li><strong>Plan mode</strong> is now shared by all tools except Codex (which has /plan as a slash command): Claude Code, Kiro (IDE SDD + Plan Agent, CLI Plan Agent), Gemini CLI (experimental), and OpenCode all offer read-only planning modes.</li>
+  <li><strong>Persistent memory</strong> varies widely: Claude Code has auto memory files, Gemini CLI has a built-in save_memory tool, Kiro CLI has experimental knowledge management with semantic search, Codex has experimental thread memory, and the Kiro Autonomous Agent learns from PR feedback across sessions.</li>
+</ul>
+
+<div class="sources">
+<h2>Sources</h2>
+
+<h3>Claude Code</h3>
+<ul>
+  <li><a href="https://code.claude.com/docs/en/skills">Claude Code Skills Docs</a></li>
+  <li><a href="https://code.claude.com/docs/en/plugins">Claude Code Plugins</a></li>
+  <li><a href="https://code.claude.com/docs/en/settings">Claude Code Settings</a></li>
+  <li><a href="https://code.claude.com/docs/en/sub-agents">Claude Code Sub-agents</a></li>
+  <li><a href="https://code.claude.com/docs/en/hooks">Claude Code Hooks</a></li>
+  <li><a href="https://alexop.dev/posts/understanding-claude-code-full-stack/">Understanding Claude Code&rsquo;s Full Stack</a></li>
+</ul>
+
+<h3>OpenAI Codex</h3>
+<ul>
+  <li><a href="https://developers.openai.com/codex/cli/">OpenAI Codex CLI</a></li>
+  <li><a href="https://developers.openai.com/codex/cli/features/">OpenAI Codex CLI Features</a></li>
+  <li><a href="https://developers.openai.com/codex/cli/slash-commands/">OpenAI Codex CLI Slash Commands</a></li>
+  <li><a href="https://developers.openai.com/codex/skills">OpenAI Codex Skills</a></li>
+  <li><a href="https://developers.openai.com/codex/app/automations/">OpenAI Codex Automations</a></li>
+  <li><a href="https://developers.openai.com/codex/guides/agents-md/">OpenAI Codex AGENTS.md</a></li>
+  <li><a href="https://developers.openai.com/codex/config-reference/">OpenAI Codex Config Reference</a></li>
+  <li><a href="https://developers.openai.com/codex/config-sample/">OpenAI Codex Config Sample</a></li>
+  <li><a href="https://developers.openai.com/codex/mcp/">OpenAI Codex MCP</a></li>
+</ul>
+
+<h3>Kiro IDE</h3>
+<ul>
+  <li><a href="https://kiro.dev/">Amazon Kiro</a></li>
+  <li><a href="https://kiro.dev/docs/specs/">Kiro IDE Specs</a></li>
+  <li><a href="https://kiro.dev/docs/steering/">Kiro IDE Steering</a></li>
+  <li><a href="https://kiro.dev/docs/hooks/">Kiro IDE Hooks</a></li>
+  <li><a href="https://kiro.dev/docs/hooks/types/">Kiro IDE Hook Types</a></li>
+  <li><a href="https://kiro.dev/docs/chat/subagents/">Kiro IDE Subagents</a></li>
+  <li><a href="https://kiro.dev/docs/skills/">Kiro IDE Agent Skills</a></li>
+  <li><a href="https://kiro.dev/docs/mcp/">Kiro IDE MCP</a></li>
+  <li><a href="https://kiro.dev/powers/">Kiro Powers</a></li>
+  <li><a href="https://kiro.dev/autonomous-agent/">Kiro Autonomous Agent</a></li>
+  <li><a href="https://www.infoq.com/news/2025/08/aws-kiro-spec-driven-agent/">Kiro Spec-Driven Development</a></li>
+</ul>
+
+<h3>Kiro CLI</h3>
+<ul>
+  <li><a href="https://kiro.dev/blog/introducing-kiro-cli/">Kiro CLI Introduction</a></li>
+  <li><a href="https://kiro.dev/docs/cli/reference/built-in-tools/">Kiro CLI Built-in Tools</a></li>
+  <li><a href="https://kiro.dev/docs/cli/chat/subagents/">Kiro CLI Subagents</a></li>
+  <li><a href="https://kiro.dev/docs/cli/hooks/">Kiro CLI Hooks</a></li>
+  <li><a href="https://kiro.dev/docs/cli/steering/">Kiro CLI Steering</a></li>
+  <li><a href="https://kiro.dev/docs/cli/mcp/configuration/">Kiro CLI MCP Configuration</a></li>
+  <li><a href="https://kiro.dev/docs/cli/experimental/knowledge-management/">Kiro CLI Knowledge Management (experimental)</a></li>
+  <li><a href="https://kiro.dev/changelog/cli/1-24/">Kiro CLI Skills, Custom Diff Tools (v1.24 changelog)</a></li>
+  <li><a href="https://kiro.dev/changelog/cli/1-23/">Kiro CLI Subagents, Plan Agent (v1.23 changelog)</a></li>
+  <li><a href="https://kiro.dev/docs/cli/custom-agents/creating/">Kiro CLI Custom Agents</a></li>
+  <li><a href="https://kiro.dev/docs/cli/custom-agents/configuration-reference/">Kiro CLI Agent Config Reference</a></li>
+</ul>
+
+<h3>Gemini CLI</h3>
+<ul>
+  <li><a href="https://developers.google.com/gemini-code-assist/docs/gemini-cli">Gemini CLI</a></li>
+  <li><a href="https://geminicli.com/docs/tools/">Gemini CLI Tools</a></li>
+  <li><a href="https://geminicli.com/docs/hooks/">Gemini CLI Hooks</a></li>
+  <li><a href="https://geminicli.com/docs/hooks/reference/">Gemini CLI Hooks Reference</a></li>
+  <li><a href="https://geminicli.com/docs/core/subagents/">Gemini CLI Sub-agents (experimental)</a></li>
+  <li><a href="https://geminicli.com/docs/cli/skills/">Gemini CLI Agent Skills</a></li>
+  <li><a href="https://geminicli.com/docs/cli/gemini-md/">Gemini CLI GEMINI.md</a></li>
+  <li><a href="https://geminicli.com/docs/get-started/configuration/">Gemini CLI Configuration</a></li>
+  <li><a href="https://geminicli.com/extensions/">Gemini CLI Extensions</a></li>
+  <li><a href="https://developers.googleblog.com/en/introducing-the-jules-extension-for-gemini-cli/">Jules Extension for Gemini CLI</a></li>
+  <li><a href="https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/">Conductor Extension</a></li>
+  <li><a href="https://developers.googleblog.com/tailor-gemini-cli-to-your-workflow-with-hooks/">Gemini CLI Hooks Blog Post</a></li>
+</ul>
+
+<h3>OpenCode</h3>
+<ul>
+  <li><a href="https://opencode.ai/">OpenCode AI</a></li>
+  <li><a href="https://opencode.ai/docs/agents/">OpenCode Agents</a></li>
+  <li><a href="https://opencode.ai/docs/tools/">OpenCode Tools</a></li>
+  <li><a href="https://opencode.ai/docs/skills/">OpenCode Skills</a></li>
+  <li><a href="https://opencode.ai/docs/plugins/">OpenCode Plugins</a></li>
+  <li><a href="https://opencode.ai/docs/mcp-servers/">OpenCode MCP Servers</a></li>
+  <li><a href="https://opencode.ai/docs/config/">OpenCode Config</a></li>
+  <li><a href="https://opencode.ai/docs/rules/">OpenCode Rules</a></li>
+</ul>
+</div>
+
+</body>
+</html>
